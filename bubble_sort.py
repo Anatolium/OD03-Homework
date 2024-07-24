@@ -1,6 +1,7 @@
 # Пузырьковая сортировка
 array = [5, 7, 4, 3, 8, 2]
 
+
 def bubble_sort(arr):
     # Количество проходов всегда на единицу меньше количества элементов в массиве
     mas_len = len(arr)
@@ -10,6 +11,7 @@ def bubble_sort(arr):
             if arr[i] > arr[i + 1]:
                 arr[i], arr[i + 1] = arr[i + 1], arr[i]
     return arr
+
 
 print(array)
 print(bubble_sort(array))
