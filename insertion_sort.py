@@ -1,6 +1,7 @@
 # Сортировка вставками
 array = [-3, 5, 0, -8, 1, 10]
 
+
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
@@ -10,6 +11,7 @@ def insertion_sort(arr):
             j -= 1
         arr[j + 1] = key
     return arr
+
 
 print(array)
 print(insertion_sort(array))
