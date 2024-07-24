@@ -1,6 +1,7 @@
 # Сортировка слиянием
 array = [38, 27, 43, 3, 58, 9, 82, 10, 68]
 
+
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -12,6 +13,7 @@ def merge_sort(arr):
 
     # Слияние двух отсортированных частей
     return merge(left_half, right_half)
+
 
 def merge(left, right):
     sorted_array = []
