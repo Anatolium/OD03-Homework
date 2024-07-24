@@ -1,15 +1,15 @@
 # Пузырьковая сортировка
-arr = [5, 7, 4, 3, 8, 2]
+array = [5, 7, 4, 3, 8, 2]
 
-def bubble_sort(mas):
+def bubble_sort(arr):
     # Количество проходов всегда на единицу меньше количества элементов в массиве
-    mas_len = len(mas)
+    mas_len = len(arr)
     for run in range(mas_len - 1):
         # Каждый проход приводит к тому, что самый большой элемент "всплывает" и оказывается в конце массива
         for i in range(mas_len - 1 - run):
-            if mas[i] > mas[i + 1]:
-                mas[i], mas[i + 1] = mas[i + 1], mas[i]
-    return mas
+            if arr[i] > arr[i + 1]:
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+    return arr
 
-print(arr)
-print(bubble_sort(arr))
+print(array)
+print(bubble_sort(array))
